@@ -1,0 +1,24 @@
+<h1>Update Account</h1>
+<% if @user.errors.any? %>
+<div>
+  <% @user.errors.full_messages.each do |msg| %>
+  <%= msg %>
+</div>
+<% end %>
+<% end %>
+<%= form_for @user do |f| %>
+  <p>
+    <%= f.text_field :first_name, placeholder: "First Name", :autocomplete => "off" %>
+    <%= f.text_field :last_name, placeholder: "Last Name", :autocomplete => "off" %>
+  </p>
+  <p>
+    <%= f.email_field :email, placeholder: "Email", :autocomplete => "off" %>
+  </p>
+  <p>
+    <%= f.password_field :password, placeholder: "Password", :autocomplete => "off" %>
+  </p>
+  <p>
+    <%= f.password_field :password_confirmation, placeholder: "Confirm Password", :autocomplete => "off"  %>
+  </p>
+    <%= f.submit "Update Account" %>
+<% end %>
