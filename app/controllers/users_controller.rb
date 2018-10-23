@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
+
+    if params[:like]
+      @likes = @user.likes
+    end
   end
 
   def new

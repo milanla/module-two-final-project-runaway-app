@@ -1,2 +1,5 @@
 <%# user info %>
 <%# destination that the user liked %>
+<% @user.likes.each do |like| %>
+<%= like.destination.name %>
+<% end %>
