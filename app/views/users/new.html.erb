@@ -1,24 +1,66 @@
-<h1>Create A New Account</h1>
+<h1 align="center">Become a Runaway</h1>
+
+<center>
 <% if @user.errors.any? %>
-<div>
-  <% @user.errors.full_messages.each do |msg| %>
-  <%= msg %>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-2">
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <%= pluralize(@user.errors.count, "error") %>
+              prohibited this user from being saved:
+        </h2>
+          <div class="panel-body">
+            <ul>
+              <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
 <% end %>
+
+
+<%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+
+<div class="form-group">
+  <div class="col-sm-4">
+    <%= f.text_field :first_name, class: "form-control", placeholder: "First Name", autofocus: true %>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-4">
+    <%= f.text_field :last_name, class: "form-control", placeholder: "Last Name", autofocus: true %>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-4">
+    <%= f.email_field :email, class: "form-control", placeholder: "Email", autofocus: true %>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-4">
+    <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-4">
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Password Confirmation" %>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="col-sm-offset-2 col-sm-10">
+    <%= f.submit "Create Account", class: 'btn btn-dark' %>
+  </div>
+</div>
+
 <% end %>
-<%= form_for @user do |f| %>
-  <p>
-    <%= f.text_field :first_name, placeholder: "First Name", :autocomplete => "off" %>
-    <%= f.text_field :last_name, placeholder: "Last Name", :autocomplete => "off" %>
-  </p>
-  <p>
-    <%= f.email_field :email, placeholder: "Email", :autocomplete => "off" %>
-  </p>
-  <p>
-    <%= f.password_field :password, placeholder: "Password", :autocomplete => "off" %>
-  </p>
-  <p>
-    <%= f.password_field :password_confirmation, placeholder: "Confirm Password", :autocomplete => "off"  %>
-  </p>
-    <%= f.submit "Create New Account" %>
-<% end %>
+</center>
