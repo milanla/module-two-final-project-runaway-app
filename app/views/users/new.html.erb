@@ -2,7 +2,7 @@
 
 <center>
 <% if @user.errors.any? %>
-<div class="row">
+<div align="center">
   <div class="col-xs-6 col-xs-offset-2">
     <div class="panel panel-danger">
       <div class="panel-heading">
@@ -11,9 +11,9 @@
               prohibited this user from being saved:
         </h2>
           <div class="panel-body">
-            <ul>
+            <ul class="new-user">
               <% @user.errors.full_messages.each do |msg| %>
-              <li><%= msg %></li>
+              <li class="new-user"><%= msg %></li>
               <% end %>
             </ul>
           </div>
@@ -22,6 +22,7 @@
   </div>
 </div>
 <% end %>
+
 
 
 <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>

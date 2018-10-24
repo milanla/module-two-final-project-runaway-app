@@ -4,6 +4,7 @@
     <title>RunawayEurope</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,17 +14,17 @@
   <body>
     <nav class="main-navigation">
            <div class="navbar-header animated fadeInUp">
-               <a class="navbar-brand" href="#">Runaway</a>
+               <a class="navbar-brand" href="#">Runaway Europe</a>
            </div>
            <ul class="nav-list">
                <li class="nav-list-item">
-                   <a href="#" class="nav-link">home</a>
+                   <a href="<%= '/' %>" class="nav-link">home</a>
                </li>
                <li class="nav-list-item">
                    <a href="#" class="nav-link">about</a>
                </li>
                <li class="nav-list-item">
-                   <a href="#" class="nav-link">login</a>
+                   <a href="<%= '/login' %>" class="nav-link">login</a>
                </li>
            </ul>
 
