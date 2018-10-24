@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :destinations, only: [:show]
   resources :users, only: [:show, :new, :create, :edit, :update, :destroy]
 
-  root 'welcome#index'
+  root 'application#index'
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'

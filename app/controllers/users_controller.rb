@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @destination = Destination.find(1)
+    @destination = Destination.all.sample
     @user = User.new(user_params)
     if @user.valid?
       @user.save
