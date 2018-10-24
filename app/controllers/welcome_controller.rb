@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    # @destination = Destination.all.sample
-    # put out a random destination
+    @user ||= User.find(session[:user_id]) if session[:user_id]
+    @destination_sample = Destination.all.sample
   end
 end

@@ -12,4 +12,8 @@ class User < ApplicationRecord
     "#{self.first_name} #{self.last_name}"
   end
 
+  def authenticate(plain_text)
+    BCrypt::Password.new(self.password_digest) == plain_text
+  end
+
 end

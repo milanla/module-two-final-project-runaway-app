@@ -1,0 +1,29 @@
+<body>
+<nav class="main-navigation">
+       <div class="navbar-header animated fadeInUp">
+           <a class="navbar-brand" href="#">Runaway Europe</a>
+       </div>
+       <ul class="nav-list">
+           <li class="nav-list-item">
+               <a href="<%= '/' %>" class="nav-link">home</a>
+           </li>
+           <% if logged_in? %>
+           <li class="nav-list-item">
+             <%= link_to "profile", user_path(@user), class: "nav-link" %>
+           </li>
+          <li class="nav-list-item">
+            <%= link_to "logout", logout_path, method: :delete, class: "nav-link" %>
+          </li>
+          <% else %>
+          <li class="nav-list-item">
+            <%= link_to "login", login_path, class: "nav-link" %>
+          </li>
+          <li class="nav-list-item">
+            <%= link_to "sign up", new_user_path, class: "nav-link"%>
+          </li>
+          <% end %>
+
+       </ul>
+
+   </nav>
+</body>
