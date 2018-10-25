@@ -5,86 +5,101 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
 paris = Destination.create(
   name: "Paris, France",
-  climate: "Cheesecake caerphilly manchego. Cheese strings dolcelatte cheese on toast halloumi mozzarella manchego squirty cheese camembert de normandie. Jarlsberg fromage frais swiss fondue manchego fondue fromage frais croque monsieur. Caerphilly taleggio fondue queso brie who moved my cheese.",
+  climate: "July is the hottest month in Paris with an average temperature of 68°F (20°C) and the coldest is January at 41°F (5°C) with the most daily sunshine hours at 8 in September. The wettest month is May with an average of 26mm of rain.",
   img_url: "https://www.telegraph.co.uk/content/dam/video_previews/v/2/v2exl2nje6lsczqgxklf2mh1qjkhmfu-xlarge.jpg",
-  description: "Cupcake ipsum dolor sit amet cupcake biscuit jujubes sugar plum. Wafer liquorice biscuit chupa chups. Bonbon liquorice jelly beans pastry jelly beans. Jelly beans carrot cake candy. Cotton candy bear claw dragée gingerbread. Pie pudding liquorice macaroon jelly. Sweet roll cake lollipop liquorice bear claw cheesecake sweet. Chocolate cake marshmallow sugar plum bonbon marshmallow. Tiramisu fruitcake topping sesame snaps jelly beans sugar plum cheesecake jelly beans jelly beans.",
-  budget: 1000,
-  activity: "nightlife")
+  description: "Paris. Poets, artists, playwrights, writers, journalists, statesmen, and more have all written about it. All came to Paris and walked away in love.
+
+  It's hard not to fall in love with Paris. It's a magical place, and one can see why so many flock here. Paris exudes culture, sophistication, and style. And, like millions before, you too will fall in love with the city.",
+  budget: 2000,
+  activity: "Paris is filled with wide streets, lots of little squares and plazas, and large parks. In European cities, especially ones as old as Paris, you rarely find such openness. It's usually only in the newly built areas. Old buildings were usually built close together, and any trip to London, Barcelona, Rome, or Prague will have you wondering how people moved about. But Paris is different. There's a lot of open space here. The space makes the city feel much less busy and far more relaxed. You can walk, you can move, you can dodge that car. It's refreshing.")
 
 london = Destination.create(
   name: "London, UK",
-  climate: "Cheesecake caerphilly manchego. Cheese strings dolcelatte cheese on toast halloumi mozzarella manchego squirty cheese camembert de normandie. Jarlsberg fromage frais swiss fondue manchego fondue fromage frais croque monsieur. Caerphilly taleggio fondue queso brie who moved my cheese.",
+  climate: "July is the hottest month in London with an average temperature of 66°F (19°C) and the coldest is January at 41°F (5°C) with the most daily sunshine hours at 7 in June. The wettest month is October with an average of 71mm of rain.",
   img_url: "https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/1053664/3d32524b03040a6202008072a8f24b6a.jpg",
-  description: "Cupcake ipsum dolor sit amet cupcake biscuit jujubes sugar plum. Wafer liquorice biscuit chupa chups. Bonbon liquorice jelly beans pastry jelly beans. Jelly beans carrot cake candy. Cotton candy bear claw dragée gingerbread. Pie pudding liquorice macaroon jelly. Sweet roll cake lollipop liquorice bear claw cheesecake sweet. Chocolate cake marshmallow sugar plum bonbon marshmallow. Tiramisu fruitcake topping sesame snaps jelly beans sugar plum cheesecake jelly beans jelly beans.",
+  description: "Immersed in history, London's rich seams of eye-opening antiquity are everywhere. The city's buildings are striking milestones in a unique and beguiling biography, and a great many of them – the Tower of London, Westminster Abbey, Big Ben – are instantly recognisable landmarks. There's more than enough innovation (the Shard, the Tate Modern extension, the planned Garden Bridge) to put a crackle in the air, but it never drowns out London's seasoned, centuries-old narrative. Architectural grandeur rises up all around you in the West End, ancient remains dot the City and charming pubs punctuate the historic quarters, leafy suburbs and river banks. Take your pick.",
   budget: 1200,
-  activity: "sight-seeing")
+  activity: "London is as much about wide-open vistas and leafy landscape escapes as it is high-density, sight-packed urban exploration. Central London is where the major museums, galleries and most iconic sights congregate, but visit Hampstead Heath or the Queen Elizabeth Olympic Park to flee the crowds and frolic in wide open green expanses. You can also venture further out to Kew Gardens, Richmond or Hampton Court Palace for beautiful panoramas of riverside London followed by a pint in a quiet waterside pub.")
 
 amsterdam = Destination.create(
   name: "Amsterdam, Netherlands",
-  climate: "Cheesecake caerphilly manchego. Cheese strings dolcelatte cheese on toast halloumi mozzarella manchego squirty cheese camembert de normandie. Jarlsberg fromage frais swiss fondue manchego fondue fromage frais croque monsieur. Caerphilly taleggio fondue queso brie who moved my cheese.",
+  climate: "August is the hottest month in Amsterdam with an average temperature of 63°F (17°C) and the coldest is January at 37°F (3°C) with the most daily sunshine hours at 7 in June. The wettest month is November with an average of 90mm of rain. The best month to swim in the sea is in August when the average sea temperature is 65°F (18°C).",
   img_url: "https://midl.amsterdam/wp-content/uploads/2017/12/Damsko-1.jpg",
-  description: "Cupcake ipsum dolor sit amet cupcake biscuit jujubes sugar plum. Wafer liquorice biscuit chupa chups. Bonbon liquorice jelly beans pastry jelly beans. Jelly beans carrot cake candy. Cotton candy bear claw dragée gingerbread. Pie pudding liquorice macaroon jelly. Sweet roll cake lollipop liquorice bear claw cheesecake sweet. Chocolate cake marshmallow sugar plum bonbon marshmallow. Tiramisu fruitcake topping sesame snaps jelly beans sugar plum cheesecake jelly beans jelly beans.",
+  description: "Amsterdam's canal-woven core is laced by atmospheric narrow lanes. You never know what you'll find: a tiny hidden garden; a boutique selling witty, stylised Dutch-designed homewares and fashion; a jewel-box-like jenever (Dutch gin) distillery; a flower stall filled with tulips in a rainbow of hues; an old monastery-turned-classical-music-venue; an ultra-niche restaurant such as an avocado or strawberry specialist or one reinventing age-old Dutch classics. Fringing the centre, post-industrial buildings in up-and-coming neighbourhoods now house creative enterprises, from art galleries to craft breweries and cutting-edge tech start-ups, as well as some of Europe's hottest clubs.",
   budget: 1300,
-  activity: "sight-seeing")
+  activity: "Amsterdam is famously gezellig, a Dutch quality that translates roughly as 'convivial' or 'cosy'. It's more easily experienced than defined. There's a sense of time stopping, an intimacy of the here-and-now that leaves your troubles behind, at least until tomorrow. The easiest place to encounter this feeling is a bruin café (brown cafe; traditional drinking establishment). Named for their wood panelling and walls once stained by smoke, brown cafes have gezelligheid (cosiness) on tap, along with good beer. You can also feel gezellig lingering after dinner in snug restaurants while the candles burn low.")
 
 berlin = Destination.create(
   name: "Berlin, Germany",
-  climate: "Cheesecake caerphilly manchego. Cheese strings dolcelatte cheese on toast halloumi mozzarella manchego squirty cheese camembert de normandie. Jarlsberg fromage frais swiss fondue manchego fondue fromage frais croque monsieur. Caerphilly taleggio fondue queso brie who moved my cheese.",
+  climate: "July is the hottest month in Berlin with an average temperature of 64°F (18°C) and the coldest is January at 30°F (-1°C) with the most daily sunshine hours at 8 in July. The wettest month is June with an average of 71mm of rain.",
   img_url: "http://www.riopricesaputovanja.com/v1/wp-content/uploads/2016/03/Brandenburg-Gate-West-Berlin.jpg",
-  description: "Cupcake ipsum dolor sit amet cupcake biscuit jujubes sugar plum. Wafer liquorice biscuit chupa chups. Bonbon liquorice jelly beans pastry jelly beans. Jelly beans carrot cake candy. Cotton candy bear claw dragée gingerbread. Pie pudding liquorice macaroon jelly. Sweet roll cake lollipop liquorice bear claw cheesecake sweet. Chocolate cake marshmallow sugar plum bonbon marshmallow. Tiramisu fruitcake topping sesame snaps jelly beans sugar plum cheesecake jelly beans jelly beans.",
+  description: "Bismarck and Marx, Einstein and Hitler, JFK and Bowie, they've all shaped – and been shaped by – Berlin, whose richly textured history confronts you at every turn. This is a city that staged a revolution, was headquartered by Nazis, bombed to bits, divided in two and finally reunited – and that was just in the 20th century! Walk along remnants of the Berlin Wall, marvel at the splendour of a Prussian palace, visit Checkpoint Charlie or stand in the very room where the Holocaust was planned. Berlin is like an endlessly fascinating 3D textbook where the past is very much present wherever you go.",
   budget: 1500,
-  activity: "sight-seeing")
+  activity: "When it comes to creativity, the sky's the limit in Berlin, which is one of Europe's big start-up capitals. In the last 20 years, the city has become a giant lab of cultural experimentation thanks to a spirit that nurtures and encourages new ideas as well as to once abundant space and cheap rent. Although the last two of these are definitely a thing of the past. Top international performers still grace Berlin's theatre, concert and opera stages; international art-world stars like Olafur Eliasson and Jonathan Meese make their home here; and Clooney and Hanks shoot blockbusters in the German capital. Highbrow, lowbrow and everything in between – there's plenty of room for the full gamut of cultural expression.")
 
 prague = Destination.create(
   name: "Prague, Czechia",
-  climate: "Cheesecake caerphilly manchego. Cheese strings dolcelatte cheese on toast halloumi mozzarella manchego squirty cheese camembert de normandie. Jarlsberg fromage frais swiss fondue manchego fondue fromage frais croque monsieur. Caerphilly taleggio fondue queso brie who moved my cheese.",
+  climate: "July is the hottest month in Prague with an average temperature of 64°F (18°C) and the coldest is January at 30°F (-1°C) with the most daily sunshine hours at 9 in June. The wettest month is May with an average of 69mm of rain..",
   img_url: "https://www.corinthia.com/application/files/8615/2232/8203/prague-old-town-square.jpg",
-  description: "Cupcake ipsum dolor sit amet cupcake biscuit jujubes sugar plum. Wafer liquorice biscuit chupa chups. Bonbon liquorice jelly beans pastry jelly beans. Jelly beans carrot cake candy. Cotton candy bear claw dragée gingerbread. Pie pudding liquorice macaroon jelly. Sweet roll cake lollipop liquorice bear claw cheesecake sweet. Chocolate cake marshmallow sugar plum bonbon marshmallow. Tiramisu fruitcake topping sesame snaps jelly beans sugar plum cheesecake jelly beans jelly beans.",
+  description: "The 1989 Velvet Revolution that freed the Czechs from communism bequeathed to Europe a gem of a city to stand beside stalwarts such as Rome, Paris and London. Not surprisingly, visitors from around the world have come in droves, and on a hot summer's day it can feel like you're sharing Charles Bridge with half of humanity. But even the crowds can't take away from the spectacle of a 14th-century stone bridge, a hilltop castle and a lovely, lazy river – the Vltava – that inspired one of the most hauntingly beautiful pieces of 19th-century classical music, Smetana's Moldau symphony.",
   budget: 1000,
-  activity: "sight-seeing")
+  activity: "The best beer in the world just got better. Since the invention of Pilsner Urquell in 1842, the Czechs have been famous for producing some of the world's finest brews. But the internationally famous brand names – Urquell, Staropramen and Budvar – have been equalled, and even surpassed, by a bunch of regional Czech beers and microbreweries that are catering to a renewed interest in traditional brewing. Never before have Czech pubs offered such a wide range of brews – names you'll now have to get your head around include Kout na Šumavě, Primátor, Únětice and Matuška.
+
+  Prague's maze of cobbled lanes and hidden courtyards is a paradise for the aimless wanderer, always beckoning you to explore a little further. Just a few blocks away from the Old Town Square you can stumble across ancient chapels, unexpected gardens, cute cafes and old-fashioned bars with hardly a tourist in sight. One of the great joys of the city is its potential for exploration – neighbourhoods such as Vinohrady and Bubeneč can reward the urban adventurer with countless memorable cameos, from the setting sun glinting off church domes, to the strains of Dvořák wafting from an open window.")
 
 venice = Destination.create(
   name: "Venice, Italy",
-  climate: "Cheesecake caerphilly manchego. Cheese strings dolcelatte cheese on toast halloumi mozzarella manchego squirty cheese camembert de normandie. Jarlsberg fromage frais swiss fondue manchego fondue fromage frais croque monsieur. Caerphilly taleggio fondue queso brie who moved my cheese.",
+  climate: "July is the hottest month in Venice with an average temperature of 73°F (23°C) and the coldest is January at 37°F (3°C) with the most daily sunshine hours at 13 in July. The wettest month is June with an average of 90mm of rain. The best month to swim in the sea is in August when the average sea temperature is 79°F (26°C).",
   img_url: "https://images.unsplash.com/photo-1515661236404-f82255cbcbfc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a977afadfe2388ec4eb05772492a79d&auto=format&fit=crop&w=1517&q=80",
-  description: "Cupcake ipsum dolor sit amet cupcake biscuit jujubes sugar plum. Wafer liquorice biscuit chupa chups. Bonbon liquorice jelly beans pastry jelly beans. Jelly beans carrot cake candy. Cotton candy bear claw dragée gingerbread. Pie pudding liquorice macaroon jelly. Sweet roll cake lollipop liquorice bear claw cheesecake sweet. Chocolate cake marshmallow sugar plum bonbon marshmallow. Tiramisu fruitcake topping sesame snaps jelly beans sugar plum cheesecake jelly beans jelly beans.",
+  description: "Never was a thoroughfare so aptly named as the Grand Canal, reflecting the glories of Venetian architecture lining its banks. At the end of Venice's signature waterway, the Palazzo Ducale and Basilica di San Marco add double exclamation points. But wait until you see what's hiding in the narrow backstreets: neighbourhood churches lined with Veroneses and priceless marbles, Tiepolo's glimpses of heaven on homeless-shelter ceilings, and a single Titian painting that mysteriously lights up an entire basilica.
+
+  Garden islands and lagoon aquaculture yield speciality produce and seafood you won't find elsewhere – all highlighted in inventive Venetian cuisine, with tantalising traces of ancient spice routes. The city knows how to put on a royal spread, as France's King Henry III once found out when faced with 1200 dishes and 200 bonbons. Today such feasts are available in miniature at happy hour, when bars mount lavish spreads of cicheti (Venetian tapas). Save room and time for a proper sit-down Venetian meal, with lagoon seafood to match views at canalside bistros and toasts with Veneto's signature bubbly, prosecco.
+
+  Pity the day trippers dropped off at San Marco with a mere three hours to take in Venice. That's about enough time for one long gasp at the show-stopper that is Piazza San Marco, but not nearly enough time to see what else Venice is hiding. Stay longer in this fairy-tale city and you'll discover the pleasures of la bea vita (the beautiful life) that only locals know: the wake-up call of gondoliers calling 'Ooooeeeee!', a morning spritz in a sunny campi (square), lunch in a crowded bacaro (bar) with friends and fuschia-pink sunsets that have sent centuries of artists mad.",
   budget: 1600,
-  activity: "sight-seeing")
+  activity: "Garden islands and lagoon aquaculture yield speciality produce and seafood you won't find elsewhere – all highlighted in inventive Venetian cuisine, with tantalising traces of ancient spice routes. The city knows how to put on a royal spread, as France's King Henry III once found out when faced with 1200 dishes and 200 bonbons. Today such feasts are available in miniature at happy hour, when bars mount lavish spreads of cicheti (Venetian tapas). Save room and time for a proper sit-down Venetian meal, with lagoon seafood to match views at canalside bistros and toasts with Veneto's signature bubbly, prosecco.
+
+  Pity the day trippers dropped off at San Marco with a mere three hours to take in Venice. That's about enough time for one long gasp at the show-stopper that is Piazza San Marco, but not nearly enough time to see what else Venice is hiding. Stay longer in this fairy-tale city and you'll discover the pleasures of la bea vita (the beautiful life) that only locals know: the wake-up call of gondoliers calling 'Ooooeeeee!', a morning spritz in a sunny campi (square), lunch in a crowded bacaro (bar) with friends and fuschia-pink sunsets that have sent centuries of artists mad.")
 
 budapest = Destination.create(
   name: "Budapest, Hungary",
   climate: "July is the hottest month in Budapest with an average temperature of 70°F (21°C) and the coldest is January at 30°F (-1°C) with the most daily sunshine hours at 10 in July. The wettest month is May with an average of 70mm of rain.",
   img_url: "https://images.unsplash.com/photo-1539106863727-d011fd10d17c?ixlib=rb-0.3.5&s=506ea7f2683f73ea9ef0cbf6ed03a3da&auto=format&fit=crop&w=1350&q=80",
-  description: "Budapest’s beauty is not all God given; humankind has played a role in shaping this pretty face too. Architecturally, the city is a treasure trove, with enough baroque, neoclassical, Eclectic and art nouveau buildings to satisfy everyone. Overall, though, Budapest has a fin de siècle feel to it, for it was then, during the capital’s ‘golden age' in the late 19th century, that most of what you see today was built.",
+  description: "Budapest's beauty is not all God given; humankind has played a role in shaping this pretty face too. Architecturally, the city is a treasure trove, with enough baroque, neoclassical, Eclectic and art nouveau buildings to satisfy everyone. Overall, though, Budapest has a fin de siècle feel to it, for it was then, during the capital's 'golden age' in the late 19th century, that most of what you see today was built.",
   budget: 900,
-  activity: "sight-seeing")
+  activity: "Garden islands and lagoon aquaculture yield speciality produce and seafood you won't find elsewhere – all highlighted in inventive Venetian cuisine, with tantalising traces of ancient spice routes. The city knows how to put on a royal spread, as France's King Henry III once found out when faced with 1200 dishes and 200 bonbons. Today such feasts are available in miniature at happy hour, when bars mount lavish spreads of cicheti (Venetian tapas). Save room and time for a proper sit-down Venetian meal, with lagoon seafood to match views at canalside bistros and toasts with Veneto's signature bubbly, prosecco.
+
+  Pity the day trippers dropped off at San Marco with a mere three hours to take in Venice. That's about enough time for one long gasp at the show-stopper that is Piazza San Marco, but not nearly enough time to see what else Venice is hiding. Stay longer in this fairy-tale city and you'll discover the pleasures of la bea vita (the beautiful life) that only locals know: the wake-up call of gondoliers calling 'Ooooeeeee!', a morning spritz in a sunny campi (square), lunch in a crowded bacaro (bar) with friends and fuschia-pink sunsets that have sent centuries of artists mad.")
 
 vienna = Destination.create(
   name: "Vienna, Austria",
-  climate: "Vienna is known for its placid continental climate; one with variable weather patterns and a large seasonal temperature variance. Austria's capital has warm and pleasant summers and winters with cold temperatures that can drop below freezing. On average, 2,000 hours of sunshine are registered annually, and because of the city's continental location away from any large bodies of water, it can actually get quite hot at times during the summer.",
+  climate: "July is the hottest month in Vienna with an average temperature of 66°F (19°C) and the coldest is January at 30°F (-1°C) with the most daily sunshine hours at 9 in July. The wettest month is June with an average of 74mm of rain.",
   img_url: "https://lonelyplanetimages.imgix.net/mastheads/stock-photo-st-stephens-church-112868985.jpg?sharp=10&vib=20&w=1200",
-  description: "Vienna, Austria’s capital, lies in the country’s east on the Danube River. Its artistic and intellectual legacy was shaped by residents including Mozart, Beethoven and Sigmund Freud. The city is also known for its Imperial palaces, including Schönbrunn, the Habsburgs’ summer residence. In the MuseumsQuartier district, historic and contemporary buildings display works by Egon Schiele, Gustav Klimt and other artists.",
+  description: "Vienna, Austria's capital, lies in the country's east on the Danube River. Its artistic and intellectual legacy was shaped by residents including Mozart, Beethoven and Sigmund Freud. The city is also known for its Imperial palaces, including Schönbrunn, the Habsburgs' summer residence. In the MuseumsQuartier district, historic and contemporary buildings display works by Egon Schiele, Gustav Klimt and other artists.",
   budget: 1000,
-  activity: "sight-seeing")
+  activity: "One of the Habsburgs' most dazzling Rinsgstrasse palaces, the Kunsthistorisches Museum Vienna, houses the imperial art collection. It's packed with priceless works by Old Masters, and treasures including one of the world's richest coin collections. Behind the Hofburg, the former imperial stables have been transformed into the innovative MuseumsQuartier, with a diverse ensemble of museums, showcasing 19th- and 20th-century Austrian art at the Leopold Museum to often-shocking avant-garde works at the contemporary MUMOK. Meteorites, fossils and prehistoric finds fill the Naturhistorisches Museum, while exquisite furnishings at the applied-arts Museum für Angewandte Kunst are also among the artistic feasts in store.
+
+  The Viennese appreciation of the finer things in life extends to its opulent coffee-house 'living rooms' serving spectacular cakes; its beloved pub-like Beisln dishing up hearty portions of Wiener Schnitzel, Tafelspitz (prime boiled beef) and goulash; elegant restaurants; and its fine Austrian wines served in vaulted Vinothek (wine bar) cellars, and in rustic vine-draped Heurigen (wine taverns) in the vineyards fringing the city. Local and international delicacies fill the heady Naschmarkt stalls, and creative chefs are experimenting with local produce and fresh new flavour combinations in innovative, often repurposed venues.")
 
 salzburg = Destination.create(
   name: "Salzburg, Austria",
-  climate: "Salzburg has a continental climate but because of it's proximity to the mountains the city also at times experiences an Alpine influenced climate. Summers are warm and enjoyable; however rainy days are quite regular. Winters are cold with temperatures lingering just above or below freezing point so plenty of snow can be expected.",
+  climate: "July is the hottest month in Salzburg with an average temperature of 65°F (19°C) and the coldest is January at 31°F (-1°C) with the most daily sunshine hours at 7 in September. The wettest month is June with an average of 160mm of rain.",
   img_url: "https://images.unsplash.com/photo-1502463552530-9c05b6c10b55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ff36b7bce678a5e59c963c425760205&auto=format&fit=crop&w=1350&q=80",
-  description: "Beyond Salzburg’s two biggest money-spinners – Mozart and The Sound of Music – hides a city with a burgeoning arts scene, wonderful food, manicured parks, quiet side streets where classical music wafts from open windows, and concert halls that uphold musical tradition 365 days a year. Everywhere you go, the scenery, the skyline, the music and the history send your spirits soaring higher than Julie Andrews' octave-leaping vocals.",
+  description: "Beyond Salzburg's two biggest money-spinners – Mozart and The Sound of Music – hides a city with a burgeoning arts scene, wonderful food, manicured parks, quiet side streets where classical music wafts from open windows, and concert halls that uphold musical tradition 365 days a year. Everywhere you go, the scenery, the skyline, the music and the history send your spirits soaring higher than Julie Andrews' octave-leaping vocals.",
   budget: 1000,
-  activity: "sight-seeing")
+  activity: "The joke 'If it's baroque, don't fix it' is a perfect maxim for Salzburg: the story-book Altstadt (old town) burrowed below steep hills looks much as it did when Mozart lived here, 250 years ago. Standing beside the fast-flowing Salzach River, your gaze is raised inch by inch to graceful domes and spires, the formidable clifftop fortress and the mountains beyond. It's a backdrop that did the lordly prince-archbishops and Maria proud.")
 
 mykonos = Destination.create(
   name: "Mykonos, Greece",
-  climate: "With more than 300 days of sunshine each year and the majority of rain falling in the colder months, the weather is ideal for beach holidays and explorating of the island's many historical attractions. Mykonos is one of the Cyclades Islands, a series of spectacular Greek islands made up of stunning sandy beaches, rocky shores and inland hills, green vegetation, rivers and world-famous white towns.",
+  climate: "July is the hottest month in Mykonos with an average temperature of 79°F (26°C) and the coldest is January at 48°F (9°C) with the most daily sunshine hours at 14 in July. The wettest month is November with an average of 170mm of rain. The best month to swim in the sea is in July when the average sea temperature is 75°F (24°C).",
   img_url: "https://www.eatworktravel.com/wp-content/uploads/2015/09/santoriniblog-3897.jpg",
   description: "Mykonos is an island in the Cyclades group in the Aegean Sea. It's popularly known for its summer party atmosphere. Beaches such as Paradise and Super Paradise have bars that blare thumping music. Massive dance clubs attract world-renowned DJs and typically stay open well past dawn. Iconic landmarks include a row of 16th-century windmills, which sit on a hill above Mykonos town.",
   budget: 1500,
-  activity: "sight-seeing")
+  activity: "The high-season mix of hedonistic holidaymakers, cruise-ship crowds and posturing fashionistas throngs Mykonos Town (aka Hora), a traditional whitewashed Cycladic maze, delighting in its authentic cubist charms and its chichi cafe-bar-boutique scene.
+
+    The number of tourists (and cashed-up A-listers) visiting Mykonos is booming, and hip new hotels, beach bars and restaurants are mushrooming. In July and August, come only if you are prepared to pay and are intent on joining the jostling street crowds, the oiled-up lounger lifestyle at the packed main beaches and the relentless party. Out of season, devoid of gloss and preening celebrities, find more subdued local life, the with occasional pelican wandering the empty streets and beaches that you will have largely to yourself.")
 
 reykjavik = Destination.create(
   name: "Reykjavík, Iceland",
@@ -92,36 +107,7 @@ reykjavik = Destination.create(
   img_url: "https://images.unsplash.com/photo-1529963183134-61a90db47eaf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=949c13b84649441112e7991d4bc259e5&auto=format&fit=crop&w=1350&q=80",
   description: "Reykjavík is strikingly cosmopolitan for its size. It's merely a town by international standards, compared with London or Paris, yet it's loaded with captivating art, rich culinary choices, and cool cafes and bars.The capital has seen a recent surge in restaurant openings, many of the highest standard, and expressing all manner of culinary creativity. Cafes by day turn into restaurants and bars at night. Tapas-style dining, high-concept Icelandic cuisine and burger joints all rub shoulders.Then join the late-night party. The music scene is epic: excellent festivals, creative DJs gigging and any number of home-grown bands.",
   budget: 1000,
-  activity: "hiking")
+  activity: "
+    You can get a full primer on Icelandic history right in central Reykjavík, from its Settlement Exhibition built around the unearthed Viking longhouse of the area's earliest inhabitants to the enormous National Museum, keeper of the country's most precious artefacts.In the Old Harbour you can enthrall the kids at a high-octane Saga Museum, or learn about the area's maritime history. And, as you make your way around, try to slip behind the shiny tourist-centric veneer to find today's people, who mix aesthetic-minded ingenuity with an almost quaint, know-your-neighbours sense of community.
 
-vienna = Destination.create(
-  name: "",
-  climate: "",
-  img_url: "",
-  description: "",
-  budget: 1000,
-  activity: "sight-seeing")
-
-vienna = Destination.create(
-  name: "",
-  climate: "",
-  img_url: "",
-  description: "",
-  budget: 1000,
-  activity: "sight-seeing")
-
-vienna = Destination.create(
-  name: "",
-  climate: "",
-  img_url: "",
-  description: "",
-  budget: 1000,
-  activity: "sight-seeing")
-
-vienna = Destination.create(
-  name: "",
-  climate: "",
-  img_url: "",
-  description: "",
-  budget: 1000,
-  activity: "sight-seeing")
+    Even if you come to Reykjavík for a short visit, be sure to take a trip to the countryside. Tours and services abound, and understanding Reykjavík and its people is helped by understanding the vast, raw land they anchor. The majority of Icelanders live in the capital, but you can guarantee their spirits also roam free across the land. Absorb what you see, hear, taste, smell – all part of Iceland's rich heritage.Take Reykjavík, then add its snow-topped mountains, churning seas and crystal-clear air, and the chances are you'll fall helplessly in love, heading home already saving to return.")

@@ -1,3 +1,44 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.grid-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 24vw;
+  height: 20vw;
+  margin: 1rem 1rem;
+  border: 0.5px solid #cdcdcd;
+  background-color: #f1eff9;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+
+  img {
+    height: 15vw;
+    width: 24vw;
+  }
+  h3 {
+    padding: .3rem;
+  }
+}
+
+.greet-user {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.greet-user p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.greet-user h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+}

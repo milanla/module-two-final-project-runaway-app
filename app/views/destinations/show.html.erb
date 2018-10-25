@@ -9,31 +9,28 @@
 </div>
 
 <div id="city-container">
-<h1 id="content" class="city-name"> ~ <%= @destination.name %> ~ </h1>
-<% if @destination.img_url != nil %>
-  <%= image_tag(@destination.img_url) %>
-<% end %>
-<br>
-<br>
-<br>
-<h2 class="whats-good">What's so great about <%= @destination.name %>?</h2>
-<br>
+    <h1 id="content" class="city-name"> ~ <%= @destination.name %> ~ </h1>
+    <% if @destination.img_url != nil %>
+      <%= image_tag(@destination.img_url) %>
+    <% end %>
+    <br>
+    <br>
+    <br>
+    <h2 class="whats-good">What's so great about <%= @destination.name %>?</h2>
+    <br>
+
     <p class="city-content">
     <%= @destination.description %>
     </p>
-  </div>
-
-<div class="quick-facts">
-  <p>Climate: <%= @destination.climate.capitalize %> </p>
-  <p> Extimated Budget: $<%= @destination.budget %> </p>
+    <p class="city-content"> <%= @destination.activity %></p>
+    <p class="city-content"> <strong>Climate:</strong> <%= @destination.climate %> </p>
+    <p class="city-content"> <strong>Estimated budget: $</strong><%= @destination.budget %></p>
+    <center>
+      <%= button_to '💚', destination_likes_path(@destination), method: :post %>
+      <%= @destination.likes.count %> <%= (@destination.likes.count) == 1||0 ? 'Like' : 'Likes'%>
+      <% pre_like = @destination.likes.find { |like| like.user_id == session[:user_id]} %>
+      <% if pre_like %>
+        <%= button_to '👎unlike', destination_like_path(@destination, pre_like), method: :delete %>
+      <% end %>
+    </center>
 </div>
-
-<%= button_to '♡', destination_likes_path(@destination), method: :post %>
-<p><%= @destination.likes.count %> <%= (@destination.likes.count) == 1 ? 'Like' : 'Likes'%></p>
-
-<% pre_like = @destination.likes.find { |like| like.user_id == session[:user_id]} %>
-<% if pre_like %>
-  <%= button_to 'Unlike', destination_like_path(@destination, pre_like), method: :delete %>
-<% else %>
-  <%= button_to '♡', destination_likes_path(@destination), method: :post %>
-<% end %>

@@ -168,7 +168,9 @@
       position: relative;
       height: 100vh;
       background-color: #eeeeee;
-      background: url('https://images.unsplash.com/photo-1483005954020-0176b0c2b982?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIxMTIzfQ&s=fce3c008a880fe0419755c9755d58cf5&auto=format&fit=crop&w=1351&q=80') no-repeat center center;
+      background: url('https://images.unsplash.com/photo-1483005954020-0176b0c2b982?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjIxMTIzfQ&s=fce3c008a880fe0419755c9755d58cf5&auto=format&fit=crop&w=1351&q=80') no-repeat center center fixed;
+      overflow: auto;
+      max-height: 100vh;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -203,13 +205,13 @@
 
  #city-container {
    img {
-     max-width: 100%;
+     width: 100%;
    }
    max-width: 100%;
    padding-top: 240px;
    padding-bottom: 50px;
    font-family: 'Lobster', cursive;
-
+   background-color: white;
  }
 
  .city-name {

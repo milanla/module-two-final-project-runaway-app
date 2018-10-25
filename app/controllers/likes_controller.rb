@@ -4,10 +4,12 @@ class LikesController < ApplicationController
   def create
     @destination = Destination.find(params[:destination_id])
     if already_liked?
-      flash.now[:notice] = "You can't like more than once!"
+      flash[:notice] = "You can't like more than once!"
+      redirect_to destination_path(@destination)
     else
       @destination.likes.create(user_id: session[:user_id])
-      redirect_to destination_path(@destination)
+      flash[:notice] = "You have successfully added a liked place!"
+      redirect_to user_path(session[:user_id])
     end
   end
 
@@ -17,8 +19,9 @@ class LikesController < ApplicationController
      flash[:notice] = "Cannot unlike"
    else
      @like.destroy
+     flash[:notice] = "You have successfully removed a liked place!"
    end
-   redirect_to destination_path(@destination)
+   redirect_to user_path(session[:user_id])
  end
 
   private

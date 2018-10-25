@@ -1,9 +1,16 @@
 <%# user info %>
+<div class="greet-user">
 <h1>Hello <%= @user.first_name %>!</h1>
 <%# destination that the user liked %>
 <p>Your next destination is </p>
-<ul>
+</div>
+<div class="grid-container">
   <% @user.destinations.each do |d| %>
-  <li><%= d.name %></li>
+  <div class="grid-item">
+    <a href="<%= destination_path(d) %>#content">
+    <%= image_tag(d.img_url) %>
+    </a>
+    <h3><a href="<%= destination_path(d) %>#content"><%= d.name %></a></h3>
+  </div>
   <% end %>
-</ul>
+</div>
