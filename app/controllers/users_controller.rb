@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.valid?
       @user.save
+      log_in(@user)
       redirect_to destination_path(@destination)
     else
       render :new

@@ -8,10 +8,10 @@ class SessionsController < ApplicationController
 
   def create
     @destination_sample = Destination.all.sample
-    user = User.find_by(email: params[:session][:email].downcase)
-    if user && user.authenticate(params[:session][:password])
-     session[:user_id] = user.id
-     flash[:success] = "#{user.first_name} has successfully logged in"
+    @user = User.find_by(email: params[:session][:email].downcase)
+    if @user && @user.authenticate(params[:session][:password])
+     log_in(@user)
+     flash[:success] = "#{@user.first_name} has successfully logged in"
      redirect_to destination_path(@destination_sample)
     else
      flash.now[:danger] = "Invalid email or password"

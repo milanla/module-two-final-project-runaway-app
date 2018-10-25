@@ -11,8 +11,10 @@ class ApplicationController < ActionController::Base
   end
 
   def index
+    # byebug
     if @user
       @user = User.find(session[:user_id])
+      log_in(session[:user_id])
       @destination_sample = Destination.all.sample
     end
   end
