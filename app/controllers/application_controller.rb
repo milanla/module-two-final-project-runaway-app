@@ -5,13 +5,13 @@ class ApplicationController < ActionController::Base
   before_action :session_user_reset
 
   def session_user_reset
+    # prevent the nav bar from breaking when there's no user in the database
     if User.all.count == 0
       session.delete(:user_id)
     end
   end
 
   def index
-    # byebug
     if @user
       @user = User.find(session[:user_id])
       log_in(session[:user_id])
@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
   def require_user
     if !logged_in?
       flash[:danger] = "You must be logged in to perform that action"
-      redirect_to root_path
+      redirect_to login_path
     end
   end
 
