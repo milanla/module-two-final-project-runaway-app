@@ -5,6 +5,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CFjalla+One"
+    rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,7 +18,7 @@
     <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, class: "alert alert-info" %>
     <% end %>
-    
+
     <%= render '../views/header' %>
 
     <%= yield %>

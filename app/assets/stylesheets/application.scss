@@ -194,15 +194,68 @@
  }
 
  .destination-container {
-  margin: 150px;
+  margin: 110px;
+  padding: 40px;
   text-align: center;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster', sans-serif;
  }
 
- .city-container {
-   padding-top: 100px;
+
+ #city-container {
+   img {
+     max-width: 100%;
+   }
+   max-width: 100%;
+   padding-top: 240px;
+   padding-bottom: 50px;
+   font-family: 'Lobster', cursive;
+
  }
 
  .city-name {
    text-align: center;
+   padding-bottom: 80px;
+   font-family: 'Lobster', cursive;
  }
+
+.whats-good {
+  text-align: center;
+}
+
+.city-content {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.destination-name {
+  font-size: 30px;
+  font-family: 'Fjalla One', sans-serif;
+  // font-family: 'Lobster', cursive;
+
+}
+
+.city-text {
+  font-size: 80px;
+}
+
+.quick-facts {
+  float: left;
+  // margin-left: 300px;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+.btn.btn-danger {
+  width: 120px;
+  height: 40px;
+}
+
+.tell-me-button {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-style: italic;
+}

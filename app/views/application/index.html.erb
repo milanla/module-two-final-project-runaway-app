@@ -4,7 +4,9 @@
         <div class="col-md-12 text-center">
             <p class="title" >Runaway</p>
             <p class="small_title">where should I runaway?</p>
-            <a class="btn btn-primary btn-join" href="<%= destination_path(Destination.all.sample.id) %>">tell me</a>
+            <div class="tell-me-button">
+              <a class="btn btn-danger" href="<%= destination_path(Destination.all.sample.id) %>">&nbsp tell me →</a>
+            </div>
         </div>
     </div>
 </div>
