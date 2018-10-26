@@ -3,7 +3,7 @@
       <h1 class="destination-name"> DO YOU WANT TO RUNAWAY TO </h1>
       <br>
       <h1 class="city-text"><%= @destination.name %>?<h1>
-      <a class="btn btn-outline-secondary" href="#content" role="button">Hell Yeah!</a>
+      <a class="btn btn-outline-secondary" href="#content" role="button">Hell yeah!</a>
       <a class="btn btn-outline-secondary" href="<%= destination_path("#{@destination_sample}") %>" role="button">Nah</a>
   </div>
 </div>
@@ -26,11 +26,13 @@
     <p class="city-content"> <strong>Climate:</strong> <%= @destination.climate %> </p>
     <p class="city-content"> <strong>Estimated budget: $</strong><%= @destination.budget %></p>
     <center>
-      <%= button_to ' 💚 ', destination_likes_path(@destination), method: :post %>
-      <%= @destination.likes.count %> <%= (@destination.likes.count) == 1||0 ? 'Like' : 'Likes'%>
-      <% pre_like = @destination.likes.find { |like| like.user_id == session[:user_id]} %>
-      <% if pre_like %>
-        <%= button_to ' 💔 ', destination_like_path(@destination, pre_like), method: :delete %>
-      <% end %>
+      <div id="like-button">
+        <%= button_to '❤️ Add to Likes', destination_likes_path(@destination), method: :post %>
+        <% @destination.likes.count %> <% (@destination.likes.count) == 1||0 ? 'Likes' : 'Likes'%>
+        <% pre_like = @destination.likes.find { |like| like.user_id == session[:user_id]} %>
+        <% if pre_like %>
+        <%= button_to ' 💔 Remove from Likes ', destination_like_path(@destination, pre_like), method: :delete %>
+        <% end %>
+      </div>
     </center>
 </div>

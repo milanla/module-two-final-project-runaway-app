@@ -183,7 +183,7 @@
   }
 
  .title {
- margin-top: 110px;
+ margin-top: 60px;
  color: black;
  font-size: 100px;
  font-family: 'Lobster', cursive;
@@ -197,7 +197,8 @@
 
  .destination-container {
   margin: 110px;
-  padding: 40px;
+  padding-bottom: 300px;
+  // padding: 40px;
   text-align: center;
   font-family: 'Lobster', sans-serif;
  }
@@ -208,16 +209,18 @@
      width: 100%;
    }
    max-width: 100%;
-   padding-top: 240px;
-   padding-bottom: 50px;
+   padding-top: 35px;
+   padding-bottom: 150px;
    font-family: 'Lobster', cursive;
    background-color: white;
  }
 
  .city-name {
    text-align: center;
-   padding-bottom: 80px;
+   padding-top: 40px;
+   padding-bottom: 40px;
    font-family: 'Lobster', cursive;
+   font-size: 50px;
  }
 
 .whats-good {
@@ -260,4 +263,21 @@
   font-family: 'Playfair Display', serif;
   font-size: 30px;
   font-style: italic;
+}
+//
+#like-button {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+  // font-family: 'Playfair Display', serif;
+  // font-size: 30px;
+  font-family: Georgia,serif;
+  font-style: italic;
+  height: 30px;
+  width: auto;
+  input {
+    margin: 0 auto;
+  }
 }
