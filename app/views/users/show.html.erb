@@ -13,4 +13,7 @@
     <h3><a href="<%= destination_path(d) %>#content"><%= d.name %></a></h3>
   </div>
   <% end %>
+  <center>
+  <%= button_to "Edit Profile", edit_user_path, method: "get" %>
+</center>
 </div>

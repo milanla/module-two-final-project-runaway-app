@@ -1,5 +1,6 @@
 class LikesController < ApplicationController
   before_action :find_like, only: [:destroy]
+  before_action :require_user
 
   def create
     @destination = Destination.find(params[:destination_id])
@@ -33,5 +34,12 @@ class LikesController < ApplicationController
   def find_like
     @destination = Destination.find(params[:destination_id])
     @like = @destination.likes.find(params[:id])
+  end
+
+  def require_user
+    if !logged_in?
+      flash[:danger] = "You must be logged in to perform that action"
+      redirect_to login_path
+    end
   end
 end
