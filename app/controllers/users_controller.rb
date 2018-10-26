@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
 
     if params[:like]
       @likes = @user.likes
@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @destination = Destination.all.sample
+    @destination = Destination.find(1)
     @user = User.new(user_params)
     if @user.valid?
       @user.save
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
   end
 
   def update
