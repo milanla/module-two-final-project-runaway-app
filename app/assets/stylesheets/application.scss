@@ -46,7 +46,7 @@
       color: #191923;
       font-family: 'Lobster', cursive;
       font-weight: 700;
-
+      cursor: pointer;
   }
 
   nav.main-navigation {
@@ -70,8 +70,8 @@
 
   a.nav-link {
       text-decoration: none;
-      font-size: 16px;
-      font-family: 'Lobster', cursive;
+      font-size: 20px;
+      font-family: 'Josefin Sans', sans-serif;
       font-weight: 500;
       cursor: pointer;
       position: relative;
@@ -183,16 +183,17 @@
   }
 
  .title {
- margin-top: 60px;
+ margin: 60px 0 0 0;
  color: black;
- font-size: 100px;
+ font-size: 120px;
  font-family: 'Lobster', cursive;
  }
 
  .small_title {
  color: black;
- font-size: 30px;
- font-family: 'Lobster', cursive;
+ font-size: 40px;
+ font-family: 'Josefin Sans', sans-serif;
+ font-weight: bold;
  }
 
  .destination-container {

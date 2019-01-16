@@ -6,17 +6,13 @@
     <div class="col-xs-8 col-xs-offset-2">
       <div class="panel panel-danger">
         <div class="panel-heading">
-          <h2 class="col-sm-5 alert alert-danger" role="alert">
-            <%= pluralize(@user.errors.count, "error") %>
-                prohibited this user from being saved:
-          </h2>
-            <div class="col-sm-5 alert alert-danger" role="alert">
-              <ul>
-                <% @user.errors.full_messages.each do |msg| %>
-                <li align="left"><%= msg %></li>
-                <% end %>
-              </ul>
-            </div>
+          <div class="col-sm-5 alert alert-danger" role="alert">
+            <ul>
+              <% @user.errors.full_messages.each do |msg| %>
+              <li align="left"><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ class LikesController < ApplicationController
       redirect_to destination_path(@destination)
     else
       @destination.likes.create(user_id: session[:user_id])
-      flash[:notice] = "You have successfully added a liked place!"
+      flash[:notice] = "You have successfully added this destination!"
       redirect_to user_path(session[:user_id])
     end
   end
